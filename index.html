@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Richard Rodríguez - Portafolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+
+  <!-- Iconos -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1b1b1b, #071013);
+    }
+    
+    /* Header más compacto */
+    header {
+      padding: 2rem 0 1.5rem 0;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      min-height: auto;
+    }
+    
+    /* Contenedor flex para el header */
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    /* Foto de perfil optimizada */
+    .profile-pic {
+      width: 140pt;
+      height: 140pt;
+      border: 4pt solid #00bfa5;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      box-shadow: 0 4pt 15pt rgba(0, 191, 165, 0.3);
+    }
+    
+    /* Información del perfil */
+    .profile-info {
+      text-align: left;
+      flex: 1;
+      min-width: 250pt;
+    }
+    
+    .profile-info h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+    
+    .profile-info p {
+      margin: 0;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    
+    /* Para móviles, mantener centrado */
+    @media (max-width: 768pt) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+      }
+      
+      .profile-info {
+        text-align: center;
+        min-width: auto;
+      }
+      
+      .profile-pic {
+        width: 100pt;
+        height: 100pt;
+      }
+      
+      .profile-info h3 {
+        font-size: 1.8rem;
+      }
+      
+      header {
+        padding: 1.5rem 0;
+      }
+    }
+    
+    .section-title {
+      border-left: 5pt solid #00bfa5;
+      padding-left: 10pt;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+    
+    .card {
+      border-radius: 12pt;
+    }
+    
+    .card-panel {
+      border-radius: 8pt;
+      font-weight: 500;
+      color: white;
+    }
+    
+    footer {
+      padding: 2rem 0;
+    }
+    
+    .social-icon {
+      margin: 0 10pt;
+      font-size: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+    
+    .social-icon:hover {
+      transform: scale(1.2);
+      color: #00bfa5;
+    }
+
+    /* Espaciado mejorado entre secciones */
+    .section {
+      padding: 2rem 0;
+    }
+    
+    .section:first-of-type {
+      padding-top: 1rem;
+    }
+  </style>
+</head>
+<body class="white-text">
+
+  <!-- Header Optimizado -->
+  <header data-aos="fade-down">
+    <div class="header-content">
+      <img src="img/IMG-20240809-WA0038.jpg" alt="Foto de perfil" class="profile-pic hoverable">
+      <div class="profile-info">
+        <h3 id="nombreEdad">Richard Rodríguez</h3>
+        <p class="flow-text">Desarrollador de Software y Analista de Datos</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Perfil -->
+  <section class="section container" data-aos="fade-up">
+    <div class="card grey darken-3 hoverable">
+      <div class="card-content">
+        <span class="card-title">Perfil</span>
+        <p>Soy un estudiante de Ingeniería de Sistemas en octavo semestre, apasionado por el desarrollo web, la programación y el análisis de datos. Me destaco por mi curiosidad, compromiso y capacidad para resolver problemas con soluciones creativas y eficientes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Estudios -->
+  <section class="section container" data-aos="fade-right">
+    <h4 class="section-title">Estudios</h4>
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card grey darken-3 hoverable">
+          <div class="card-content">
+            <span class="card-title" style="color: gold;">Técnico en Sistemas</span>
+            <p>Servicio Nacional de Aprendizaje - SENA</p>
+            <p>2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card grey darken-3 hoverable">
+          <div class="card-content">
+            <span class="card-title" style="color: gold;">Tecnólogo en ADSO</span>
+            <p>Servicio Nacional de Aprendizaje - SENA</p>
+            <p>2025</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card grey darken-3 hoverable">
+          <div class="card-content">
+            <span class="card-title" style="color: gold;">Ingeniería de Sistemas</span>
+            <p>Corporación Unificada Nacional de Educación Superior - CUN</p>
+            <p>Octavo semestre - En Curso</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section class="section container" data-aos="zoom-in">
+    <h4 class="section-title">Habilidades</h4>
+    <div class="row">
+      <div class="col s6 m3"><div class="card-panel teal darken-3 center-align hoverable">HTML</div></div>
+      <div class="col s6 m3"><div class="card-panel teal darken-3 center-align hoverable">CSS</div></div>
+      <div class="col s6 m3"><div class="card-panel teal darken-3 center-align hoverable">JavaScript</div></div>
+      <div class="col s6 m3"><div class="card-panel teal darken-3 center-align hoverable">Python</div></div>
+      <div class="col s6 m3"><div class="card-panel teal darken-3 center-align hoverable">Django</div></div>
+      <div class="col s6 m3"><div class="card-panel teal darken-3 center-align hoverable">Vue</div></div>
+      <div class="col s6 m3"><div class="card-panel teal darken-3 center-align hoverable">Node.js</div></div>
+      <div class="col s6 m3"><div class="card-panel teal darken-3 center-align hoverable">Laravel</div></div>
+      <div class="col s6 m3"><div class="card-panel teal darken-3 center-align hoverable">SQL</div></div>
+      <div class="col s6 m3"><div class="card-panel teal darken-3 center-align hoverable">Análisis de Datos</div></div>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section class="section container" data-aos="fade-left">
+    <h4 class="section-title">Experiencia Laboral</h4>
+    <div class="card grey darken-3">
+      <div class="card-content">
+        <span class="card-title">Aprendiz Técnico - Bancolombia</span>
+        <p><strong>Octubre 2024 - Abril 2025</strong></p>
+        <p>Vicepresidencia de Cumplimiento, ADC de Ingeniería y Ciencia Analítica de Cumplimiento. Desempeñándome como Analista de Datos, apoyando procesos de análisis y gestión de información.</p>
+        <p><strong>Referencia: </strong> Andres Felipe Cano Cadavid - Lider del ADC de Ingeniería y Ciencia Analítica de Cumplimiento - 3116050287 </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="page-footer grey darken-4" data-aos="fade-up">
+    <div class="container center-align">
+      <p>© 2025 Richard Rodríguez</p>
+      <a href="https://www.linkedin.com/in/richard-rodr%C3%ADguez-7313a0359/" target="_blank" class="white-text social-icon">
+        <i class="material-icons">link</i> Linkedin
+      </a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
